@@ -6,9 +6,6 @@ The IDEAC project’s goal is to provide more reliable temperature and humidity 
 The model is a four-layer ensemble learning model using a combination of random forest regression, gradient boosted regression and multilayer perceptron regression. Weather data is pulled from the APIs of weather forecasters API Agro, Weatherbit, and DarkSky. This data is hourly timestamped readouts from various sensors. The temperature, humidity and wind data is cleaned and concatenated with previously downloaded data. This dataframe is then fed into the multilayer ensemble learning model. 
 
 
-![image](https://user-images.githubusercontent.com/49824508/112873549-a1cc6600-9076-11eb-883a-14486fc65eb8.png)
-
-
 
 ![image](https://user-images.githubusercontent.com/49824508/112873978-2e772400-9077-11eb-9ad0-6e2faaa371d1.png)
 
