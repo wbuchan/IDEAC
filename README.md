@@ -9,6 +9,11 @@ The model is a four-layer ensemble learning model using a combination of random 
 ![image](https://user-images.githubusercontent.com/49824508/112873549-a1cc6600-9076-11eb-883a-14486fc65eb8.png)
 
 
+
+![image](https://user-images.githubusercontent.com/49824508/112873978-2e772400-9077-11eb-9ad0-6e2faaa371d1.png)
+
+
+
 When the dataframe reaches the first layer, the data is partitioned into training (75%) and testing (25%). Each regression model is trained to predict temperature using the set of features from the training set and its accuracy is evaluated using the testing set. Root mean squared error is used to for mean error in degrees Celsius between predicted and actual temperatures. The predicted values from each model are then concatenated and used as input for the next layer. Successive layers process only 25% of the previous layer’s data. This funnel structure means that by the final layer, the test dataset is for only 6 timeslots and temperature is therefore only predicted for 6 hours. 
 
 
